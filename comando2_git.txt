@@ -1,0 +1,40 @@
+pwd -> saber en que ruta estamos
+clear -> limpiar la terminal
+ls -> listar los archivos
+ls -l -> lista los archivos con detalle
+ls -la -> mostrar todos los archivo y carpetas, incluidos los ocultos
+r read
+w write
+x execute
+
+cd -> cambiar de directorio
+cd .. -> retroceder de directorio
+cd NOMBRE_CARPETA -> acceder a la carpeta
+cd path -> accedeer desde ruta completa
+
+mkdir -> crear directorio o carpeta
+touch nombre_archivo.extension -> crear archivos
+
+cp nombre_archivo carpeta/ o path/ -> copiar un archivo dentro de un directorio
+cp -r carpeta/ carpeta_destino/ -> copia el contenido de una carpeta en otra 
+
+mv nombre_archivo.extension carpeta_destino/ -> mover archivo a una carpeta
+mv nombre_directorio carpeta_destino -> mueve un directorio dentro de otro
+
+rm nombre_archivo.extension -> eliminar el archivo
+rm -rf nombre_directorio -> eliminar carpeta con todo su contenido
+
+ 591  mkdir ejemplo1
+  592  cd ejemplo1
+  593  cd ..
+  594  toucj ejemplo1/index.html
+  595  touch ejemplo1/index.html
+  596  cd ejemplo1
+  597  clear
+  598  ls
+  599  mkdir assets
+  600  ls
+  601  ls -la
+  602  mkdir assets/css
+  603  mkdir assets/js
+  604  mkdir assets/img

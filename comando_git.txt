@@ -1,0 +1,52 @@
+pwd--> saber en qu eruta estamos.
+clear--> Limpia la terminal.
+ls --> lista los archivos dentro de la carpeta.
+ls -l--> lista los archivos
+ls -la--> muestra todos los archivos y carpetas, incluidos los ocultos
+d-->directorio
+r-->read
+w-->write
+x-->execute
+
+cd--> cambiar de directorio   
+cd ..-->cambia a carpeta anterior
+cd nombre_de_carpeta--> acceder a la carpeta
+mkdir --> crea directorio o carpetas
+touch nombre-archivo.extension  --> crear archivos
+cp nombre-archivo carpeta/ o paht/ copiar un archivo dentro de un directorio
+cp -r carpeta / carpeta de destino --> copia el contenido de una carpeta en la carpeta de destino
+mv nombre_archivo.extension carpeta_destino/ --> mover archivo a una carpeta.
+mv nombre_directorio carpeta_destino
+rm nombre_archivo.extension --> eliminar archivo
+rm -rf nombre_directorio -->elimina carpeta con todos su contenido
+git config --global core.autocrlf false 
+
+
+config --list
+git config --global user.name "Cristian Morales"
+git config --global user.email jurelius@gmail.com
+config --list
+
+//comandos git
+
+git init--> inicializa git en el directorio solo se ejecuta 1 vez
+
+echo "# ejemplo1_g8" >> README.md // crea el texto # ejemplo_g8 dentro del archivo README.md.
+                                     Si el archivo (README) no existe , lo crea.
+
+git add .  // se deja punto pq hay otros archivos sin versionar a demás del README.
+
+git commit -m "  primer commint grupo 8"  // ejecuta el comando " primer commit grupo 8"
+
+git branch -M main  // indica trabajar con la rama main y no con la master
+
+git remote add origin https://github.com/Jurelius/ejemplo1_g8.git // enlaza el computador con una ruta
+
+
+git push -u origin main //
+
+
+git branch gh-pages
+git checkout gh-pages
+git merge main
+git push origin gh-pages

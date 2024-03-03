@@ -1,0 +1,59 @@
+carpetas con nombres con espacio = para archivos que tienen espacio, se debe poner este signo "\" antes del espacio.
+pwd= Nos indica donde nos encotramos posicionados.
+clear= limpiar la terminal
+ls= listar arhivos dentro de la carpeta.
+ls -la= Muestra todos los archivos y carpetas incluidos los ocultos (fechas y horarios)
+ls -l=Muestra los archivos y carpetas sin los ocultos.
+drwx = (d=directorio) (r=read) (w=write) (x=execute)
+cd= cambiar de directorio (se usa cd + la ruta del directorio) 
+cd .. =retroceder carpetas
+cd+nombre de carpeta = accede a la carpeta
+cd path= acceder desde ruta completa
+mkdir= crear directorios o carpetas
+touch= nombre_archivo.extension (crear archivos de cualquier tipo)
+cp = copiar un archivo dentro de un directorio. (nombre_archivo carpeta/ o path)
+cp -r= se utiliza para cpiar carpetas dentro de otros directorios (cp -r carpeta/ carpeta de destino/)
+mv = mover archivos o carpetas entre directorios (mv nombre_archivo.extension + carpeta_destino/) Si se mueve a un archivo y existe otro en el destino con el mismo nombre, se sobreescribe.
+rm = elimina archivos, no quedan en la papelera de reciclaje. (en windows se hace con shift+suprimir)
+rm -rf = elimina carpetas con los archivos que esten dentro.
+
+git config --global user.name "Tu Nombre"
+git config --global user.email tucorreo@mail.com
+git config --list ver  configuracion de git
+
+// Comandos git
+
+git init = inicializar Git en el directorio que estamos trabajando. (corroborar directorio con pwd), solo debe existir un .git por directorio
+git add --all = Versionar todos los archivos, nuevos, modificados o eliminados. (Tambien funciona git add . + archivo.extension)
+git commit -m = Sirve para agregar una descripción de las versiones de proyecto.
+git push = Se envia el proyecto a la nube.
+git status = se puede ver el status del proyecto
+git log= revisar todas las versiones de un proyecto
+git diff= muestra todas la diferencia de desde el último commit guardado    
+
+El proceso comun será "git init" una primera vez y luego una secuencia de "git add --all", "git commit -m" y "git push".
+
+Todas las carpetas que esten vacias al ejecutar git status serán ignoradas.
+
+git clone https://github.com/learsixela/demo0050 /copia 
+
+git remote add origin https://github.com/learsixela/ejemplo1_g8 vuelve a conectar
+
+
+
+git init (en esta ocacion lo utilizamos antes pero git lo ofrece luego de echo.)
+echo "# Ejemplo1_g8" >> README.md / primera instruccion, escrible (echo) esta información dentro de README.md, se creara un archivo.
+
+git add .
+git commit -m "Comentario Inicial"
+git branch -M main 
+git remote add origin https://github.com/dfuentes01/Ejemplo1_g8.git
+git push -u origin main
+
+//desde la 2da vez//
+git add .
+git commit -m "Comentario Inicial"
+git push -u origin main
+
+git pull origin main  -> bajar los cambios de la nube al computador..
+
