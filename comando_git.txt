@@ -50,3 +50,12 @@ git branch gh-pages
 git checkout gh-pages
 git merge main
 git push origin gh-pages
+
+git init
+echo "# desafio_github1" >> README.md
+
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Jurelius/desafio_github1.git
+git push -u origin main
